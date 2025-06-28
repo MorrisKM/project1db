@@ -1,27 +1,12 @@
 {
-  "name": "project1db",
+  "name": "bites-json-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "JSON Server for offlinebites app",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+"start": "json-server --host 0.0.0.0 --watch db.json --port 5000"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MorrisKM/project1db.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/MorrisKM/project1db/issues"
-  },
-  "homepage": "https://github.com/MorrisKM/project1db#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "json-server": "^1.0.0-beta.3"
-  },
-  "devDependencies": {}
+    "json-server": "^0.17.3"
+  }
 }
